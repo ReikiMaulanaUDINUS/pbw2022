@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body style="text-align: center;"> 
+  
+    <video id="mov" width="640px" height="360px" controls> 
+          
+        <source src="vid.mp4" 
+            type="video/mp4"> 
+    </video> 
+	<buttons onclick="playVid()" type="button">Play</button>
+	<buttons onclick="pauseVid()" type"button">Pause</button>
+	<buttons onclick="duration()" type="button">Duration</button>
+	
+	<iframe width="426px" height="240px" src="https://www.youtube.com/watch?v=_Yhyp-_hX2s"></iframe>
+		
+</body> 
+
+<script>
+var vid = document.getElementById("mov");
+function playVid() {
+	vid.play();
+	}
+function pauseVid() {
+	vid.pause();
+	}
+function duration() {
+	alert(vid.duration);
+	}
+</script>
+  
+</html> 
