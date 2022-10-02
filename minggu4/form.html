@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form HTML</title>
+	</head>
+	<body>
+	<h3 align="center">FORM MAHASISWA</h3>
+		<form id="form1" name="form" method="post" action="kirim.php">
+		<table>
+			<tr>
+				<td>NIM</td>
+				<td><input type="number" name="fnim"></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td><input type="text" name="fnama"></td>
+			</tr>
+			<tr>
+				<td>Prodi</td>
+				<td><select name="fprodi">
+					<option value="">Pilih progrsm studi</option>
+					<option value="A11">S1 Teknik Informatika</option>
+					<option value="A12">S1 Sistem Informasi</option>
+					<option value="A22">D3 Teknik Informatika</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>Tgl lahir</td>
+				<td><input type="date" name="ftgl"></td>
+			</tr>
+			<tr>
+				<td>Hobi</td>
+				<td>
+					<input type="checkbox" name="hobi1" value="01">
+					<label for="hobi1">Web Developer</label></br>
+					<input type="checkbox" name="hobi2" value="02">
+					<label for="hobi2">Game Developer</label></br>
+					<input type="checkbox" name="hobi3" value="03">
+					<label for="hobi3">Graphic Designing</label></br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" name="fkirim" value="Kirim"></td></tr>
+		</table>
+		</form>
+	</body>
+		
+</html>
