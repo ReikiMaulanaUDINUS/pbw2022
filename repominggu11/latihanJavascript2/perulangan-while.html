@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Perulangan While</title>
+    </head>
+    <body>
+        <script>
+            var restart = confirm("Apakah anda ingin mengulang?");
+            var loop = 0;
+            
+            while(restart) {
+                loop++;
+                restart = confirm("Apakah anda ingin mengulang?");
+            }
+
+            document.write("Perulangan sudah dilakukan sebanyak "+ loop +" kali");
+        </script>
+    </body> 
+</html>
